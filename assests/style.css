@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+    font-family: 'Scope One', serif;
+}
+.container {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('./banner.jpg');
+    background-size: cover;
+}
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    color: #fff;
+}
+ .heading__secondary {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.heading__secondary span {
+     color: rgb(32, 160, 192);
+}
+.menu {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85px;
+}
+.menu__icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.menu__icon {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu__icon--line {
+    width: 25px;
+    background: white;
+    height: 2px;
+}
+.menu__icon--text {
+    font-size: 1.3rem;
+}
+.urban__entrance {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-align: center;
+}
+.heading__primary {
+    font-size: 5rem;
+}
+.urban__entrance--text {
+    font-size: 1.8rem;
+    margin: 10px 0 60px;
+    line-height: 1.8;
+}
+.btn {
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn--color {
+    background: rgb(0, 162, 255);
+    padding: 16px 32px;
+    border-radius: 4px;
+}
+.btn--color:hover {
+    background: rgb(10, 105, 160);
+    transition: 0.2s;
+}
