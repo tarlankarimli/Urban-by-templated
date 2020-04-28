@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+    font-family: 'Scope One', serif;
+}
+.container {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/img/banner.jpg');
+    background-size: cover;
+}
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+ 
+    &-secondary {
+        color: white;
+        font-weight: 400;
+        font-size: 1.2rem;
+        & span {
+            color: rgb(88, 132, 212);
+            font-size: 1.4rem;
+        }
+    }
+    .menu {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90px;
+ 
+        .menu--icon {
+            height: 25px;
+            width: 25px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+           
+            &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+            }
+ 
+            .menu--icon__line {
+                background: white;
+                height: 2px;
+                width: 28px;
+            }
+        }
+        .menu--text {
+            font-size: 1.3rem;
+            color: white;
+        }
+    }
+}
+ 
+.main {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    text-align: center;
+ 
+    & .header-primary {
+        font-size: 5rem;
+    }
+    & .main--text {
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin: 10px 0 60px;
+    }
+    & .btn {
+        font-size: 1.6rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    & .btn--function {
+        background: rgb(0, 162, 255);
+        padding: 16px 32px;
+        border-radius: 4px;
+    }
+    & .btn--function:hover {
+        background: rgb(10, 105, 160);
+    transition: 0.2s;
+    }
+}
